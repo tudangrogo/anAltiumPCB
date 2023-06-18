@@ -1,0 +1,481 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">18/6/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7:35:29 pm</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc" class="file"><acronym title="F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc">F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">43</td></tr>
+</table>
+</td>
+</table><a name="IDFKPS1APM5545LTMHCR3RKPQ2EOJB1SRBMU0EILMQJAOLPQOTWGBI"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUGDRDKOK5WVIBCEKTMMIYNZAZNJJNTP30W1DNYB00B2FNH4313DH">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOK215GRTSTOHE33FCGWEYRFDCL23RQ24JUWV5TB2JQF5NWOW2QHL">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEQ2MNAUJEEYHGGR4IQWKTQSINLRJJIMWOXLHXBHOWM22NY5JAYB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCAPNIBHUKN4CHWXWBA2GZKZ2JNATIJXRI5LUZJKELEIHVZ5MFUCD">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOXT4QLQIHTZOPCT0513CE4T4CORSI3B5TXIZ2WFNEPISQXNTC0E">Width Constraint (Min=5mil) (Max=1000mil) (Preferred=5mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1WHGGFFL2SXQBABCFEAFFBBLZLT1UCHSCZ2RF4CKTMKNQ0XM5B3C">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (InPadClass('PowerPads'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGT5O4DE52IQUKSRDRDV5BKUFFPGJUO3EZTYCXKOFQQRO0Q1WLTCJ">Power Plane Connect Rule(Relief Connect )(Expansion=11.811mil) (Conductor Width=5mil) (Air Gap=5mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCGSDIYRDVYTMFIHHVLEKWIROBHFE5GJRJK4V2UDHETK3HHPNETSP">Minimum Annular Ring (Minimum=3mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKWPCKIZ5KQ3DDMK5VJ5S2FF2BGY4I4W3VMQG4BHMCBOMZJJVOHZG">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID14HD3U03MCHISJYHTFNAQLSQMNHMALAYMOGPHJOP2H3MIUMOW1E">Hole To Hole Clearance (Gap=9.842mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID10FHUIKX2ZTXFX1EZGXICPNDVLLXW5MSFDHPYLCVXQUVMZTDCHAP">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID113CNYT0FDMRB4GYUHXOYSALHKCWYKFH1WYSFJSKHRZTTLESUDH">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</a></td>
+<td class="column2">22</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJVKKF0WK3LCJLXVLOH4PNE4SDN1KN2SSXB1MGTIOW5ILDUYKBSYE">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDU5M30DR2RD4XMRDFD3ICMS3KMFDO3BNU5HVGW1O0T4BCIWIDK4O">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXTZF0J5ZJJPBCBN0N31VKRIXMIGWGTUOX52WAUC14AGO0YJ2PUKK">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">15</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID002FSKL0WHKMDNKDRI2EBH4ZRLQNYHITKSQSAV1GFDFLOTASFCG">Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">43</td>
+</tr>
+</table><br><a name="IDEQ2MNAUJEEYHGGR4IQWKTQSINLRJJIMWOXLHXBHOWM22NY5JAYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=355.866mil|Location2.X=497.638mil|Location1.Y=1207.362mil|Location2.Y=1449.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=355.866mil|Location2.X=497.638mil|Location1.Y=1207.362mil|Location2.Y=1449.134mil|Absolute=True">Un-Routed Net Constraint: Net 3.3V Between Pad C14-1(376.536mil,1230mil) on Top Layer And Pad C31-1(475mil,1428.465mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=422.795mil|Location2.X=713.779mil|Location1.Y=1207.362mil|Location2.Y=1252.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=422.795mil|Location2.X=713.779mil|Location1.Y=1207.362mil|Location2.Y=1252.638mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C14-2(443.465mil,1230mil) on Top Layer And Pad C18-2(700mil,1225mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=422.795mil|Location2.X=497.638mil|Location1.Y=1207.362mil|Location2.Y=1382.205mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=422.795mil|Location2.X=497.638mil|Location1.Y=1207.362mil|Location2.Y=1382.205mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C14-2(443.465mil,1230mil) on Top Layer And Pad C31-2(475mil,1361.535mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=644.817mil|Location2.X=763.571mil|Location1.Y=1406.832mil|Location2.Y=1495.183mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=644.817mil|Location2.X=763.571mil|Location1.Y=1406.832mil|Location2.Y=1495.183mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C19-2(665mil,1475mil) on Top Layer And Pad U2-7(743.388mil,1427.015mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=375mil|Location2.X=808.278mil|Location1.Y=1328.465mil|Location2.Y=1480mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=375mil|Location2.X=808.278mil|Location1.Y=1328.465mil|Location2.Y=1480mil|Absolute=True">Un-Routed Net Constraint: Net 3.3V Between Pad C31-1(475mil,1428.465mil) on Top Layer And Track (708.278mil,1380mil)(709.703mil,1378.575mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID113CNYT0FDMRB4GYUHXOYSALHKCWYKFH1WYSFJSKHRZTTLESUDH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=820.562mil|Location2.X=824.895mil|Location1.Y=1562.004mil|Location2.Y=1566.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=820.562mil|Location2.X=824.895mil|Location1.Y=1562.004mil|Location2.Y=1566.337mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Arc (822.729mil,1559.249mil) on Top Overlay And Pad Y2-1(819.724mil,1589.567mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.864mil|Location2.X=900.114mil|Location1.Y=1018.371mil|Location2.Y=1024.621mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.864mil|Location2.X=900.114mil|Location1.Y=1018.371mil|Location2.Y=1024.621mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.345mil &lt; 5mil) Between Area Fill (880.553mil,1013.166mil) (902.206mil,1021.04mil) on Top Overlay And Pad D2-2(915mil,1033.898mil) on Top Layer [Top Overlay] to [Top Solder] clearance [3.345mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=928.214mil|Location2.X=934.464mil|Location1.Y=1016.403mil|Location2.Y=1022.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=928.214mil|Location2.X=934.464mil|Location1.Y=1016.403mil|Location2.Y=1022.653mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.937mil &lt; 5mil) Between Area Fill (901.221mil,976.221mil) (928.78mil,1031.339mil) on Top Overlay And Pad D2-2(915mil,1033.898mil) on Top Layer [Top Overlay] to [Top Solder] clearance [3.937mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.886mil|Location2.X=936.136mil|Location1.Y=1018.371mil|Location2.Y=1024.621mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.886mil|Location2.X=936.136mil|Location1.Y=1018.371mil|Location2.Y=1024.621mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.345mil &lt; 5mil) Between Area Fill (927.794mil,1013.169mil) (949.447mil,1021.043mil) on Top Overlay And Pad D2-2(915mil,1033.898mil) on Top Layer [Top Overlay] to [Top Solder] clearance [3.345mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.495mil|Location2.X=1325.828mil|Location1.Y=1383.306mil|Location2.Y=1387.639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.495mil|Location2.X=1325.828mil|Location1.Y=1383.306mil|Location2.Y=1387.639mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT1-1(1365mil,1415mil) on Bottom Layer And Track (1323.661mil,1070.512mil)(1323.661mil,1385.472mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1404.172mil|Location2.X=1408.505mil|Location1.Y=1383.306mil|Location2.Y=1387.639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1404.172mil|Location2.X=1408.505mil|Location1.Y=1383.306mil|Location2.Y=1387.639mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT1-1(1365mil,1415mil) on Bottom Layer And Track (1406.339mil,1070.512mil)(1406.339mil,1385.472mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.495mil|Location2.X=1325.828mil|Location1.Y=1068.345mil|Location2.Y=1072.678mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.495mil|Location2.X=1325.828mil|Location1.Y=1068.345mil|Location2.Y=1072.678mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT1-2(1365mil,1040.984mil) on Bottom Layer And Track (1323.661mil,1070.512mil)(1323.661mil,1385.472mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1404.172mil|Location2.X=1408.505mil|Location1.Y=1068.345mil|Location2.Y=1072.678mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1404.172mil|Location2.X=1408.505mil|Location1.Y=1068.345mil|Location2.Y=1072.678mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT1-2(1365mil,1040.984mil) on Bottom Layer And Track (1406.339mil,1070.512mil)(1406.339mil,1385.472mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1105.314mil|Location2.X=1109.647mil|Location1.Y=1736.495mil|Location2.Y=1740.828mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1105.314mil|Location2.X=1109.647mil|Location1.Y=1736.495mil|Location2.Y=1740.828mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT2-1(1137.008mil,1780mil) on Top Layer And Track (792.52mil,1738.661mil)(1107.48mil,1738.661mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1105.314mil|Location2.X=1109.647mil|Location1.Y=1819.172mil|Location2.Y=1823.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1105.314mil|Location2.X=1109.647mil|Location1.Y=1819.172mil|Location2.Y=1823.505mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT2-1(1137.008mil,1780mil) on Top Layer And Track (792.52mil,1821.339mil)(1107.48mil,1821.339mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=790.353mil|Location2.X=794.686mil|Location1.Y=1736.495mil|Location2.Y=1740.828mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=790.353mil|Location2.X=794.686mil|Location1.Y=1736.495mil|Location2.Y=1740.828mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT2-2(762.992mil,1780mil) on Top Layer And Track (792.52mil,1738.661mil)(1107.48mil,1738.661mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=790.353mil|Location2.X=794.686mil|Location1.Y=1819.172mil|Location2.Y=1823.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=790.353mil|Location2.X=794.686mil|Location1.Y=1819.172mil|Location2.Y=1823.505mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad ANT2-2(762.992mil,1780mil) on Top Layer And Track (792.52mil,1821.339mil)(1107.48mil,1821.339mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=936.316mil|Location2.X=942.566mil|Location1.Y=1162.524mil|Location2.Y=1168.774mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=936.316mil|Location2.X=942.566mil|Location1.Y=1162.524mil|Location2.Y=1168.774mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.072mil &lt; 5mil) Between Pad C29-2(913.663mil,1166.337mil) on Top Layer And Text "C29" (940.1mil,1147.718mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.072mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=827.741mil|Location2.X=833.991mil|Location1.Y=1007.487mil|Location2.Y=1013.737mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=827.741mil|Location2.X=833.991mil|Location1.Y=1007.487mil|Location2.Y=1013.737mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.846mil &lt; 5mil) Between Pad C30-1(838.465mil,990mil) on Top Layer And Pad U3-1(830.866mil,1015.472mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.846mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.637mil|Location2.X=899.887mil|Location1.Y=951.442mil|Location2.Y=957.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.637mil|Location2.X=899.887mil|Location1.Y=951.442mil|Location2.Y=957.692mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.799mil &lt; 5mil) Between Pad D2-1(915mil,946.102mil) on Top Layer And Track (887.441mil,954.567mil)(892.362mil,954.567mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.799mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=930.113mil|Location2.X=936.363mil|Location1.Y=951.442mil|Location2.Y=957.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=930.113mil|Location2.X=936.363mil|Location1.Y=951.442mil|Location2.Y=957.692mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.799mil &lt; 5mil) Between Pad D2-1(915mil,946.102mil) on Top Layer And Track (937.638mil,954.567mil)(942.559mil,954.567mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.799mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.637mil|Location2.X=899.887mil|Location1.Y=1022.308mil|Location2.Y=1028.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=893.637mil|Location2.X=899.887mil|Location1.Y=1022.308mil|Location2.Y=1028.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.799mil &lt; 5mil) Between Pad D2-2(915mil,1033.898mil) on Top Layer And Track (887.441mil,1025.433mil)(892.362mil,1025.433mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.799mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=930.113mil|Location2.X=936.363mil|Location1.Y=1022.308mil|Location2.Y=1028.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=930.113mil|Location2.X=936.363mil|Location1.Y=1022.308mil|Location2.Y=1028.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.799mil &lt; 5mil) Between Pad D2-2(915mil,1033.898mil) on Top Layer And Track (937.638mil,1025.433mil)(942.559mil,1025.433mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.799mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=828.699mil|Location2.X=833.033mil|Location1.Y=1013.306mil|Location2.Y=1017.639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=828.699mil|Location2.X=833.033mil|Location1.Y=1013.306mil|Location2.Y=1017.639mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U3-1(830.866mil,1015.472mil) on Top Overlay And Region (0 hole(s)) Top Layer [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=881.56mil|Location2.X=887.81mil|Location1.Y=1608.761mil|Location2.Y=1615.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=881.56mil|Location2.X=887.81mil|Location1.Y=1608.761mil|Location2.Y=1615.011mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.331mil &lt; 5mil) Between Pad Y2-2(910.276mil,1589.567mil) on Top Layer And Text "Y2" (845.032mil,1612.551mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.331mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=880.183mil|Location2.X=887.791mil|Location1.Y=1632.886mil|Location2.Y=1640.324mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=880.183mil|Location2.X=887.791mil|Location1.Y=1632.886mil|Location2.Y=1640.324mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.192mil &lt; 5mil) Between Pad Y2-3(910.276mil,1660.433mil) on Top Layer And Text "Y2" (845.032mil,1612.551mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.192mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=841.907mil|Location2.X=848.157mil|Location1.Y=1634.781mil|Location2.Y=1641.031mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=841.907mil|Location2.X=848.157mil|Location1.Y=1634.781mil|Location2.Y=1641.031mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.747mil &lt; 5mil) Between Pad Y2-4(819.724mil,1660.433mil) on Top Layer And Text "Y2" (845.032mil,1612.551mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.747mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDU5M30DR2RD4XMRDFD3ICMS3KMFDO3BNU5HVGW1O0T4BCIWIDK4O"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.923mil|Location2.X=1134.335mil|Location1.Y=1000.909mil|Location2.Y=1031.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.923mil|Location2.X=1134.335mil|Location1.Y=1000.909mil|Location2.Y=1031.518mil|Absolute=True">Net Antennae: Arc (1120.423mil,1065.595mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDXTZF0J5ZJJPBCBN0N31VKRIXMIGWGTUOX52WAUC14AGO0YJ2PUKK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=373.411mil|Location2.X=379.66mil|Location1.Y=1226.875mil|Location2.Y=1233.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=373.411mil|Location2.X=379.66mil|Location1.Y=1226.875mil|Location2.Y=1233.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Pad C14-1(376.536mil,1230mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.34mil|Location2.X=446.589mil|Location1.Y=1226.875mil|Location2.Y=1233.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.34mil|Location2.X=446.589mil|Location1.Y=1226.875mil|Location2.Y=1233.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Pad C14-2(443.465mil,1230mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1425.34mil|Location2.Y=1431.589mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1425.34mil|Location2.Y=1431.589mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Pad C31-1(475mil,1428.465mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1358.411mil|Location2.Y=1364.66mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1358.411mil|Location2.Y=1364.66mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Pad C31-2(475mil,1361.535mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=768.997mil|Location2.X=775.246mil|Location1.Y=1854.324mil|Location2.Y=1860.573mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=768.997mil|Location2.X=775.246mil|Location1.Y=1854.324mil|Location2.Y=1860.573mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "ANT2" (731mil,1845mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=376.347mil|Location2.X=382.597mil|Location1.Y=1289.127mil|Location2.Y=1295.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=376.347mil|Location2.X=382.597mil|Location1.Y=1289.127mil|Location2.Y=1295.376mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "C14" (349mil,1280mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.775mil|Location2.X=478.025mil|Location1.Y=1485.137mil|Location2.Y=1491.386mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.775mil|Location2.X=478.025mil|Location1.Y=1485.137mil|Location2.Y=1491.386mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "C31" (445mil,1476mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1015.261mil|Location2.X=1021.51mil|Location1.Y=649.169mil|Location2.Y=655.418mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1015.261mil|Location2.X=1021.51mil|Location1.Y=649.169mil|Location2.Y=655.418mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1018.386mil,655mil)(1018.386mil,835mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1251.482mil|Location2.X=1257.731mil|Location1.Y=354.351mil|Location2.Y=360.6mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1251.482mil|Location2.X=1257.731mil|Location1.Y=354.351mil|Location2.Y=360.6mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1254.606mil,64.213mil)(1254.606mil,691.772mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=399.875mil|Location2.X=406.125mil|Location1.Y=1226.875mil|Location2.Y=1233.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=399.875mil|Location2.X=406.125mil|Location1.Y=1226.875mil|Location2.Y=1233.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (403mil,1211.252mil)(403mil,1248.748mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=413.875mil|Location2.X=420.125mil|Location1.Y=1226.875mil|Location2.Y=1233.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=413.875mil|Location2.X=420.125mil|Location1.Y=1226.875mil|Location2.Y=1233.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (417mil,1211.252mil)(417mil,1248.748mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1384.875mil|Location2.Y=1391.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1384.875mil|Location2.Y=1391.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (456.252mil,1388mil)(493.748mil,1388mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1398.875mil|Location2.Y=1405.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=471.875mil|Location2.X=478.125mil|Location1.Y=1398.875mil|Location2.Y=1405.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (456.252mil,1402mil)(493.748mil,1402mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1015.261mil|Location2.X=1021.51mil|Location1.Y=61.088mil|Location2.Y=67.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1015.261mil|Location2.X=1021.51mil|Location1.Y=61.088mil|Location2.Y=67.337mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (782.165mil,64.213mil)(1254.606mil,64.213mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=779.041mil|Location2.X=785.29mil|Location1.Y=354.351mil|Location2.Y=360.6mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=779.041mil|Location2.X=785.29mil|Location1.Y=354.351mil|Location2.Y=360.6mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (782.165mil,64.213mil)(782.165mil,691.772mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

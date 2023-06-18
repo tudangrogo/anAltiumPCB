@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VBUS Pin=DIO?-1
+Removed Pin From Net: NetName=NetC30_1 Pin=DIO?-2
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=DIO?
+Add Component: Footprint Not Found PRTR5V0U2X
+Added Component: Designator=D?(SMT_DIODE_SOD_323)
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D1-4
+Added Pin To Net: NetName=VBUS Pin=D?-1
+Added Pin To Net: NetName=NetC30_1 Pin=D?-2
+Add Class Member: Failed to add class member : Component D1 PRTR5V0U2X
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component D? 1N5819/SS14/S4(SOD_323)

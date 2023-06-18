@@ -1,0 +1,37 @@
+Added Component: Designator=D?(NXP-SOT143B-4_V)
+Add component (AddParameter): Name = "Capacitance Value"; Value = "16pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Quad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/4479/prtr5v0u2x-102853-4479461.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Rev. 02, 01/2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Direction Type"; Value = "Uni-Directional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESD Protection Voltage"; Value = "8KV@ContactDisc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "0.1uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current (Max)"; Value = "0.1uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temp Range"; Value = "-40Cto85C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Classification"; Value = "Industrial"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max Deg. C"; Value = "85C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min Deg. C"; Value = "-40C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SOT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "SOT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "3+Tab"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Uni-Directional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Depth (mm)"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Height (mm)"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Length (mm)"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rad Hardened"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Breakdown Voltage"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Stand-off Voltage"; Value = "5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Suppressor Type"; Value = "DiodeArrays"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage (Max)"; Value = "5.5V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D?-1
+Added Pin To Net: NetName=D_P Pin=D?-2
+Added Pin To Net: NetName=D_N Pin=D?-3
+Added Pin To Net: NetName=VBUS Pin=D?-4
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component D? PRTR5V0U2X,215

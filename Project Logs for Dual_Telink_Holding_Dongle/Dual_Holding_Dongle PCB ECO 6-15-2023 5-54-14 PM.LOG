@@ -1,0 +1,270 @@
+Removed Pin From Net: NetName=3.3V Pin=C1-1
+Removed Pin From Net: NetName=3.3V Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=3.3V Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C22-2
+Removed Pin From Net: NetName=NetC19_1 Pin=C24-1
+Removed Pin From Net: NetName=GND Pin=C24-2
+Removed Pin From Net: NetName=GND Pin=C25-2
+Removed Pin From Net: NetName=NetANT2_1 Pin=C26-1
+Removed Pin From Net: NetName=GND Pin=C26-2
+Removed Pin From Net: NetName=GND Pin=C27-1
+Removed Pin From Net: NetName=GND Pin=C28-2
+Removed Pin From Net: NetName=NetC19_1 Pin=U2-27
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=C24
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=C25
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=C26
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=C27
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=C28
+Removed Member From Class: ClassName=RF Member=NetC19_1
+Removed Member From Class: ClassName=RF Member=NetC19_2
+Change Component Footprint: Designator=C18 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Component Footprint: Designator=C19 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Component Footprint: Designator=C20 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Component Footprint: Designator=C21 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Component Footprint: Designator=C22 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Component Footprint: Designator=C23 Old Footprint=CAPC1608X90N New Footprint=CAP0402
+Change Footprint: Footprint Not Found PRTR5V0U2X
+Change Component Comment : Designator=C1 Old Comment=1UF New Comment=2.2uF
+Change Component Comment : Designator=C22 Old Comment=1UF New Comment=18pF
+Change Component Comment : Designator=C3 Old Comment=1UF New Comment=104
+Change Component Comment : Designator=C2 Old Comment=1UF New Comment=220pF
+Change Component Comment : Designator=C21 Old Comment=2.2uF New Comment=2.7pF
+Change Component Comment : Designator=C20 Old Comment=104 New Comment=1UF
+Change Component Comment : Designator=C19 Old Comment=220pF New Comment=1UF
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAP0402"; UniqueID = "\ALQHZLKB" ("\ALQHZLKB")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAP0402"; UniqueID = "\CUKGMDJY" ("\CUKGMDJY")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "220pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "CAP0402"; UniqueID = "\PMPOTAYU" ("\PMPOTAYU")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C19" ("C19"); Footprint = "CAPC1608X90N"; UniqueID = "\JRIDQUQN" ("\JRIDQUQN")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1UF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20" ("C20"); Footprint = "CAPC1608X90N"; UniqueID = "\CIYFOAMS" ("\CIYFOAMS")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1UF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21" ("C21"); Footprint = "CAPC1608X90N"; UniqueID = "\PZRDXDDH" ("\PZRDXDDH")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.7pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C22" ("C22"); Footprint = "CAPC1608X90N"; UniqueID = "\IOERJFDV" ("\IOERJFDV")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "18pF"; VariantName = "[No Variations]"
+Added Component: Designator=L4(IND0402)
+Add component (AddParameter): Name = "Value"; Value = "150 mH"; VariantName = "[No Variations]"
+Added Component: Designator=L5(IND0402)
+Add component (AddParameter): Name = "Value"; Value = "150 mH"; VariantName = "[No Variations]"
+Added Component: Designator=L6(IND0402)
+Add component (AddParameter): Name = "Value"; Value = "150 mH"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=1.2V Pin=C1-1
+Added Pin To Net: NetName=1.2V Pin=C3-1
+Added Pin To Net: NetName=1.2V Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=RST_A Pin=C23-1
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D1-4
+Added Pin To Net: NetName=NetL4_1 Pin=L4-1
+Added Pin To Net: NetName=NetL4_2 Pin=L4-2
+Added Pin To Net: NetName=NetANT2_1 Pin=L5-2
+Added Pin To Net: NetName=NetC19_1 Pin=U2-8
+Added Pin To Net: NetName=1.2V Pin=U2-12
+Added Pin To Net: NetName=RST_A Pin=U2-25
+Added Pin To Net: NetName=1.2V Pin=U2-28
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=C21-1
+Added Pin To Net: NetName=NetC2_1 Pin=L6-2
+Added Pin To Net: NetName=NetC2_1 Pin=U2-27
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=L5-1
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC20_1 Pin=C20-1
+Added Pin To Net: NetName=NetC20_1 Pin=U2-13
+Added Net: Name=NetC20_1
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Pin To Net: NetName=NetC22_2 Pin=L6-1
+Added Pin To Net: NetName=NetC22_2 Pin=U2-26
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=RXD Pin=U1-4
+Added Pin To Net: NetName=RXD Pin=U2-2
+Added Net: Name=RXD
+Added Pin To Net: NetName=TXD Pin=U1-1
+Added Pin To Net: NetName=TXD Pin=U2-3
+Added Net: Name=TXD
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component L4 47uH
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component L5 3.3nH
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component L6 1.3nF
+Added Member To Class: ClassName=RF Member=Wire NetC2_1
+Added Member To Class: ClassName=RF Member=Wire NetC2_2

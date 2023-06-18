@@ -1,0 +1,58 @@
+Change Footprint: Footprint Not Found PRTR5V0U2X
+Add Component: Footprint Not Found SAMTEC_USB-A-S-X-X-TH
+Added Component: Designator=J4(MOLX-480-37-1000_V)
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case\Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.molex.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.molex.com/pdm_docs/sd/480371000_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. D, 06/2004"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.45 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "4-Pin Surface Mount Device, Body 12 x 18.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "480-37-1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "100 mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "1 mohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8 mm"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found XTAL_ECS-240-10-33-AGM-TR
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D1-4
+Add Pin To Net: Unknown Pin: Pin J3-01
+Add Pin To Net: Unknown Pin: Pin J3-02
+Add Pin To Net: Unknown Pin: Pin J3-03
+Add Pin To Net: Unknown Pin: Pin J3-04
+Add Pin To Net: Unknown Pin: Pin L4-1
+Add Pin To Net: Unknown Pin: Pin L4-2
+Add Pin To Net: Unknown Pin: Pin L5-1
+Add Pin To Net: Unknown Pin: Pin L5-2
+Add Pin To Net: Unknown Pin: Pin L6-1
+Add Pin To Net: Unknown Pin: Pin L6-2
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Add Pin To Net: Unknown Pin: Pin Y2-3
+Add Pin To Net: Unknown Pin: Pin Y2-4
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C13 1UF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C14 1UF
+Add Class Member: Failed to add class member : Component J3 USB-A-S-X-X-TH
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component J4 480-37-1000
+Add Class Member: Failed to add class member : Component L4 47uH
+Add Class Member: Failed to add class member : Component L5 3.3nH
+Add Class Member: Failed to add class member : Component L6 1.3nF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component U2 Telink TLSR8251F512ET32
+Add Class Member: Failed to add class member : Component Y2 ECS-240-10-33-AGM-TR

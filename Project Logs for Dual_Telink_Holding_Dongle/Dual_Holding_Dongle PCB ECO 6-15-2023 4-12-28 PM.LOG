@@ -1,0 +1,168 @@
+Removed Pin From Net: NetName=GND Pin=C13-2
+Removed Pin From Net: NetName=3.3V Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=C14-2
+Removed Pin From Net: NetName=GND Pin=D3-1
+Removed Pin From Net: NetName=USB_D_N Pin=D3-2
+Removed Pin From Net: NetName=GND Pin=D4-1
+Removed Pin From Net: NetName=USB_D_P Pin=D4-2
+Removed Pin From Net: NetName=USB_D_N Pin=U2-2
+Removed Pin From Net: NetName=USB_D_P Pin=U2-3
+Removed Pin From Net: NetName=GND Pin=U2-4
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=D2
+Removed Member From Class: ClassName=Dual_Holding_Dongle Member=D4
+Removed Member From Class: ClassName=RF Member=NetC10_1
+Change Footprint: Footprint Not Found PRTR5V0U2X
+Change Component Footprint: Designator=R1 Old Footprint=SMT_R_0402 New Footprint=RESC1608N_ZERO
+Change Component Comment : Designator=D1 Old Comment=1N5819/SS14/S4(SOD_323) New Comment=PRTR5V0U2X
+Change Component Comment : Designator=R1 Old Comment=12k New Comment=Resistor
+Change Component Designator: OldDesignator=ANT? NewDesignator=ANT2
+Change Component Designator: OldDesignator=C? NewDesignator=C13
+Change Component Designator: OldDesignator=C? NewDesignator=C14
+Change Component Designator: OldDesignator=C? NewDesignator=C15
+Change Component Designator: OldDesignator=C? NewDesignator=C16
+Change Component Designator: OldDesignator=C? NewDesignator=C17
+Change Component Designator: OldDesignator=C? NewDesignator=C18
+Change Component Designator: OldDesignator=C? NewDesignator=C19
+Change Component Designator: OldDesignator=C? NewDesignator=C20
+Change Component Designator: OldDesignator=C? NewDesignator=C21
+Change Component Designator: OldDesignator=C? NewDesignator=C22
+Change Component Designator: OldDesignator=C? NewDesignator=C23
+Change Component Designator: OldDesignator=C? NewDesignator=C24
+Change Component Designator: OldDesignator=C? NewDesignator=C25
+Change Component Designator: OldDesignator=C? NewDesignator=C26
+Change Component Designator: OldDesignator=C? NewDesignator=C27
+Change Component Designator: OldDesignator=C? NewDesignator=C28
+Change Component Designator: OldDesignator=C? NewDesignator=C29
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Change component parameters: Designator = "R1" ("R1"); Footprint = "SMT_R_0402"; UniqueID = "\LKFJFNXK" ("\LKFJFNXK")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "9330399"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "541-10.0KHCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100K"; VariantName = "[No Variations]"
+Added Component: Designator=C30(CAPC1608X90N)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=C31(CAPC1608X90N)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://psearch.murata.com/capacitor/product/GRM188R71C474KA88#.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.yuden.co.jp/or/product/category/capacitor/EMK107B7474KA-T.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 2"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 3"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 4"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "GRM188R71C474KA88D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 2"; Value = "C1608X7R1C474K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 3"; Value = "EMK107B7474KA-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 4"; Value = "CL10B474KONE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "16V; X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3295-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "445-5192-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "587-1250-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SAMTEC_USB-A-S-X-X-TH
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found XTAL_ECS-240-10-33-AGM-TR
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=3.3V Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Add Pin To Net: Unknown Pin: Pin J3-04
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Add Pin To Net: Unknown Pin: Pin Y2-3
+Add Pin To Net: Unknown Pin: Pin Y2-4
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC23_1
+Change Net Name : Old Net Name=NetJ?_1 New Net Name=NetJ2_1
+Added Net: Name=D_N
+Added Pin To Net: NetName=D_P Pin=D1-2
+Added Net: Name=D_P
+Added Pin To Net: NetName=NetANT2_1 Pin=ANT2-1
+Added Pin To Net: NetName=NetANT2_1 Pin=C26-1
+Added Net: Name=NetANT2_1
+Added Pin To Net: NetName=NetC19_1 Pin=C19-1
+Added Pin To Net: NetName=NetC19_1 Pin=C24-1
+Added Pin To Net: NetName=NetC19_1 Pin=U2-27
+Added Net: Name=NetC19_1
+Added Pin To Net: NetName=NetC19_2 Pin=C19-2
+Added Pin To Net: NetName=NetC19_2 Pin=C25-1
+Added Net: Name=NetC19_2
+Added Pin To Net: NetName=NetC22_1 Pin=C22-1
+Added Pin To Net: NetName=NetC22_1 Pin=U2-8
+Added Net: Name=NetC22_1
+Added Pin To Net: NetName=NetC27_2 Pin=C27-2
+Added Pin To Net: NetName=NetC27_2 Pin=U2-26
+Added Net: Name=NetC27_2
+Added Pin To Net: NetName=NetL4_1 Pin=U2-10
+Added Net: Name=NetL4_1
+Added Pin To Net: NetName=NetL4_2 Pin=U2-11
+Added Net: Name=NetL4_2
+Added Pin To Net: NetName=VBUS Pin=C30-1
+Added Pin To Net: NetName=VBUS Pin=R1-1
+Added Pin To Net: NetName=VBUS Pin=U3-1
+Added Pin To Net: NetName=VBUS Pin=U3-1
+Added Net: Name=VBUS
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component ANT2 ANT_Rainsun
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C11 18pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C15 1UF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C16 0.5pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C17 0.5pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C18 2.2uF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C19 220pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C20 104
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C21 2.2uF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C22 1UF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C23 1UF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C24 2.7pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C25 2pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C26 0.5pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C27 18pF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C28 1UF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C29 10uF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C30 10uF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component C31 10uF
+Added Member To Class: ClassName=Dual_Holding_Dongle Member=Component J2 TEST_POINT
+Add Class Member: Failed to add class member : Component J3 USB-A-S-X-X-TH
+Add Class Member: Failed to add class member : Component L4 47uH
+Add Class Member: Failed to add class member : Component L5 3.3nH
+Add Class Member: Failed to add class member : Component L6 1.3nF
+Add Class Member: Failed to add class member : Component Y2 ECS-240-10-33-AGM-TR
+Added Member To Class: ClassName=RF Member=Wire NetANT2_1
+Added Member To Class: ClassName=RF Member=Wire NetC19_1
+Added Member To Class: ClassName=RF Member=Wire NetC19_2

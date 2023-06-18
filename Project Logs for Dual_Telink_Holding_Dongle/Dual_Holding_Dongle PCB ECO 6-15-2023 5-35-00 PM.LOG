@@ -1,0 +1,27 @@
+Change Footprint: Footprint Not Found PRTR5V0U2X
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found L-0603
+Add Component: Footprint Not Found XTAL_ECS-240-10-33-AGM-TR
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D1-4
+Added Pin To Net: NetName=VBUS Pin=J4-1
+Added Pin To Net: NetName=D_N Pin=J4-2
+Added Pin To Net: NetName=D_P Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-4
+Added Pin To Net: NetName=GND Pin=J4-5
+Added Pin To Net: NetName=GND Pin=J4-6
+Add Pin To Net: Unknown Pin: Pin L4-1
+Add Pin To Net: Unknown Pin: Pin L4-2
+Add Pin To Net: Unknown Pin: Pin L5-1
+Add Pin To Net: Unknown Pin: Pin L5-2
+Add Pin To Net: Unknown Pin: Pin L6-1
+Add Pin To Net: Unknown Pin: Pin L6-2
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Add Pin To Net: Unknown Pin: Pin Y2-3
+Add Pin To Net: Unknown Pin: Pin Y2-4
+Add Class Member: Failed to add class member : Component L4 47uH
+Add Class Member: Failed to add class member : Component L5 3.3nH
+Add Class Member: Failed to add class member : Component L6 1.3nF
+Add Class Member: Failed to add class member : Component Y2 ECS-240-10-33-AGM-TR
