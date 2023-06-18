@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : F:\OneDrive - Rogo\PCB\Dual_Telink_Holding_Dongle\Dual_Holding_Dongle._2_sidedPcbDoc.PcbDoc
 Date     : 18/6/2023
-Time     : 7:35:29 pm
+Time     : 11:11:55 pm
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
@@ -10,12 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 3.3V Between Pad C14-1(376.536mil,1230mil) on Top Layer And Pad C31-1(475mil,1428.465mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C14-2(443.465mil,1230mil) on Top Layer And Pad C18-2(700mil,1225mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C14-2(443.465mil,1230mil) on Top Layer And Pad C31-2(475mil,1361.535mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C19-2(665mil,1475mil) on Top Layer And Pad U2-7(743.388mil,1427.015mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3.3V Between Pad C31-1(475mil,1428.465mil) on Top Layer And Track (708.278mil,1380mil)(709.703mil,1378.575mil) on Top Layer 
-Rule Violations :5
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -70,31 +65,20 @@ Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
-   Violation between Net Antennae: Arc (1120.423mil,1065.595mil) on Top Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Pad C14-1(376.536mil,1230mil) on Top Layer 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Pad C14-2(443.465mil,1230mil) on Top Layer 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Pad C31-1(475mil,1428.465mil) on Top Layer 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Pad C31-2(475mil,1361.535mil) on Top Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Text "ANT2" (731mil,1845mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Text "C14" (349mil,1280mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Text "C31" (445mil,1476mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1018.386mil,655mil)(1018.386mil,835mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1254.606mil,64.213mil)(1254.606mil,691.772mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (403mil,1211.252mil)(403mil,1248.748mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (417mil,1211.252mil)(417mil,1248.748mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (456.252mil,1388mil)(493.748mil,1388mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (456.252mil,1402mil)(493.748mil,1402mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (782.165mil,64.213mil)(1254.606mil,64.213mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (782.165mil,64.213mil)(782.165mil,691.772mil) on Top Overlay 
-Rule Violations :15
+Rule Violations :5
 
 Processing Rule : Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 43
+Violations Detected : 27
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
